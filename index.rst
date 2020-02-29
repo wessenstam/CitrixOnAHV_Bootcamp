@@ -13,9 +13,8 @@
   updatecatalog/updatecatalog
   files/files
   flow_quarantine_vm/flow_quarantine_vm
-  low_secure_desktops/flow_secure_desktops
+  flow_secure_desktops/flow_secure_desktops
   prismops/prismops_rightsize_ctx_lab/prismops_rightsize_euc_lab
-..  euccitrix/cleanup/cleanup
 
 .. toctree::
   :maxdepth: 2
