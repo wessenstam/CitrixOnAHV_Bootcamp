@@ -13,7 +13,6 @@ Welcome to the End User Computing bootcamp featuring Citrix Apps & Desktops. Thi
 - Native microsegmentation with Nutanix Flow to secure a virtual desktop environment
 - Rich monitoring and automation capabilities with Prism Ops
 
-If you have not previously completed the **Private Cloud** lab track, follow the quick instructions below to provision your user VLAN and Windows Tools VM that will be used throughout this lab track.
 
 Deploying your Windows Tools VM
 +++++++++++++++++++++++++++++++
