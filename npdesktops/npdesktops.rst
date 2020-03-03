@@ -21,7 +21,7 @@ Creating the Machine Catalog
 
 #. Review the available Operating System types. Select **Single-Session OS** and click **Next**.
 
-#. Select **Machines that are power managed** and **Citrix Machine Creation Services (MCS)**. Under **Resources** select the pool of resources that includes your user VLAN, configured in the previous exercise.
+#. Select **Machines that are power managed** and **Citrix Machine Creation Services (MCS)**. Under **Resources** select the pool of resources that includes the Secondary network, configured in the previous exercise.
 
 #. Click **Next**.
 
