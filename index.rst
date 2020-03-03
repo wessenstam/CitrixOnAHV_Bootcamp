@@ -14,6 +14,7 @@
   files/files
   flow_quarantine_vm/flow_quarantine_vm
   flow_secure_desktops/flow_secure_desktops
+  prismops/prismops_capacity_lab_ctx/prismops_capacity_lab
   prismops/prismops_rightsize_ctx_lab/prismops_rightsize_euc_lab
 
 .. toctree::

@@ -15,8 +15,6 @@ As you can see there’s a 48% improvement of desktop density per node when appl
 Deploying a VM
 ++++++++++++++
 
-If you completed the :ref:`move` lab, skip to CtxPausingUpdates_. Otherwise, follow the steps below to provision a VM to begin building your gold image.
-
 #. In **Prism Central**, select :fa:`bars` **> Virtual Infrastructure > VMs**.
 
    .. figure:: images/1.png
@@ -40,7 +38,7 @@ If you completed the :ref:`move` lab, skip to CtxPausingUpdates_. Otherwise, fol
        - Select **Add**
 
    - Select **Add New NIC**
-       - **VLAN Name** - *User Assigned VLAN*
+       - **VLAN Name** - Secondary
        - Select **Add**
 
 #. Click **Save** to create the VM.
