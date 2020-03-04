@@ -48,7 +48,7 @@ A single XenDesktop site can contain multiple Delivery Controllers and StoreFron
 
    .. figure:: images/3.png
 
-#. Fill out the following fields and click **Next > Finish** to add your user VLAN as a resource for desktop provisioning:
+#. Fill out the following fields and click **Next > Finish**:
 
    - **Name for these resources** - *Initials*\ -Resources
    - Select **Secondary Network**
