@@ -8,9 +8,7 @@ Unlike persistent desktops, non-persistent desktops do not persist changes acros
 
 Due to the stateless nature of non-persistent desktops, this approach may not be viable for every use case. For use cases such as kiosks, which require no customization, non-persistent desktops are an ideal fit. For use cases where persisting end user customizations such as application settings are important, profile management solutions would need to be evaluated and employed. Similarly, the need to persist end user data would require additional network based storage. The need to maintain many master images due to varying requirements and application stacks across an organization can also present a challenge for non-persistent desktops at scale. In these cases, application virtualization, application layering, and/or server based application technologies may be applied to consolidate master image sprawl.
 
-Introduction - In this exercise you will use the Citrix Studio to deploy a pool of non-persistent virtual desktops based the same gold image as the previous exercise.
-
-**In this lab you will deploy and test a pool of non-persistent virtual desktops with Citrix on AHV.**
+**In this exercise you will use the same gold image to deploy a pool of non-persistent virtual desktops with Citrix on AHV.**
 
 Creating the Machine Catalog
 ++++++++++++++++++++++++++++
@@ -87,8 +85,6 @@ Creating the Delivery Group
    .. figure:: images/4.png
 
 #. On the **Applications** page, click **Next**.
-
-   .. note:: #TODO Add note about seamless applications
 
 #. On the **Desktops** page, click **Add** and fill out the following fields:
 

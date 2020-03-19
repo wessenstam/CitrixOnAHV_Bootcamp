@@ -10,7 +10,7 @@ When we install a vanilla client operating system, we need to keep in mind that 
 
 As you can see there’s a 48% improvement of desktop density per node when applying baseline Citrix optimizations, and increases to 57% with a second pass using VMware OS optimization recommendations. Note that both sets of optimizations are independent of underlying hypervisor, and rather tune services within the OS guest.
 
-**In this lab you will install the Citrix Virtual Desktop Agent within the VM migrated from your vSphere environment, and optimize the VM using both the Citrix Optimizer and VMware OS Optimization Tool.**
+**In this lab you will install the Citrix Virtual Desktop Agent on a Windows 10 VM, and optimize the VM using both the Citrix Optimizer and VMware OS Optimization Tool.**
 
 Deploying a VM
 ++++++++++++++
@@ -43,7 +43,7 @@ Deploying a VM
 
 #. Click **Save** to create the VM.
 
-#. Select your Move VM and click **Power On**.
+#. Select your VM and click **Power On**.
 
 .. _CtxPausingUpdates:
 
@@ -129,8 +129,6 @@ The Virtual Delivery Agent (VDA) is a collection of drivers and services install
 
    .. figure:: images/9.png
 
-   <info about default optimizations>
-
 #. Allow the installer to automatically configure required Windows Firewall port accessibility, click **Next**.
 
 #. Click **Install** to begin the VDA installation. This process should take approximately 5 minutes.
@@ -210,8 +208,6 @@ Takeaways
 +++++++++
 
 What are the key things learned in this exercise?
-
-- The gold VM does not require Sysprep or being domain joined.
 
 - Using MCS helps simplify the gold image by not having to manually specify (or depend on Active Directory to specify) what XenDesktop Delivery Controller(s) with which the image should attempt to register. This allows more flexibility in having a single gold image support multiple environments without external dependencies.
 
