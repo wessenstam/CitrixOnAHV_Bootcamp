@@ -196,7 +196,7 @@ XenDesktop provisions pools of desktops based on a hypervisor snapshot of the go
 
 #. Once restarted, Perform a graceful shutdown of the VM from within the guest.
 
-#. From **Prism Element**, take a snapshot of the VM (e.g. *Post optimization and VDA install*)
+#. From **Prism Element**, take a snapshot of the VM (e.g. *Initials Post optimization and VDA install*)
 
    .. figure:: images/20.png
 
