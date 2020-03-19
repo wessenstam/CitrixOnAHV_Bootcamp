@@ -42,7 +42,7 @@ A single XenDesktop site can contain multiple Delivery Controllers and StoreFron
 
       .. figure:: images/5.png
 
-#. Select **NutanixResources** and note that only the **Primary** network has been made available for desktop provisioning. Under the **Actions** menu, click **Add Connection and Resources**.
+#. Select **NutanixResources** and note that only the **Primary** network has been made available for desktop provisioning. Click **Hosting** on the leftside menu, then under the **Actions** menu, click **Add Connection and Resources**.
 
 #. Select **Use an existing Connection: NutanixAcropolis** and click **Next** to add resources to the connection.
 
@@ -109,7 +109,7 @@ Machine Catalogs are collections of either physical or virtual machines. When us
 
 #. Specify a friendly, descriptive **Machine Catalog name** that includes your *Initials* (e.g. **XYZ Windows 10 Persistent 4vCPU 4GB**) and click **Finish**.
 
-   MCS will now create a clone from the snapshot of **W10-Gold**. When using MCS, the Delivery Controller copies the gold image to each configured datastore in the Host Connection. In a traditional SAN scenario (or using MCS with local storage) this can be a time consuming event, as the Machine Catalog may be spread over several volumes to achieve the desired performance. In a Nutanix cluster you would typically have a single datastore (Storage Container) servicing all desktops, simplifying the configuration and improving the time to provision a Machine Catalog.
+   MCS will now create a clone from the snapshot of *Initials*\ **-GoldImage**. When using MCS, the Delivery Controller copies the gold image to each configured datastore in the Host Connection. In a traditional SAN scenario (or using MCS with local storage) this can be a time consuming event, as the Machine Catalog may be spread over several volumes to achieve the desired performance. In a Nutanix cluster you would typically have a single datastore (Storage Container) servicing all desktops, simplifying the configuration and improving the time to provision a Machine Catalog.
 
    .. figure:: images/12.png
 
