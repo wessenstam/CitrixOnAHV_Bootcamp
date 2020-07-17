@@ -29,9 +29,9 @@
 
 .. _getting_started:
 
----------------
-Getting Started
----------------
+------------
+Introduction
+------------
 
 Welcome to the Nutanix Citrix on AHV Bootcamp! This workbook accompanies an instructor-led session that introduces Nutanix and Citrix technologies and many common management tasks.
 
