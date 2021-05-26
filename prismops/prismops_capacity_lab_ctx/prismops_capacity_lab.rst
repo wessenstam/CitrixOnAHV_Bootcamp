@@ -11,19 +11,19 @@ In this lab you will learn how Prism Ops can help IT Admins monitor, analyze and
 Lab Setup
 +++++++++
 
-#. Open your **Prism Central** and navigate to the **VMs** page. Note down the IP Address of the **GTSPrismOpsLabUtilityServer**. You will need to access this IP Address throughout this lab.
+#. Open your **Prism Central** and navigate to the **VMs** page. Note down the IP Address of the **PrismOpsLabUtilityServer**. You will need to access this IP Address throughout this lab.
 
-   .. figure:: images/init1.png
+   .. figure:: images/init1b.png
 
-#. Open a new tab in the browser, and navigate to http://`<GTSPrismOpsLabUtilityServer_IP_ADDRESS>`/alerts [example http://10.42.113.52/alerts]. It is possible you may need to log into the VM if you are the first one to use it. Just fill out the **Prism Central IP**, **Username** and **Password** and click **Login**.
+#. Open a new tab in the browser, and navigate to http://`<PrismOpsLabUtilityServer_IP_ADDRESS>`/alerts [example http://10.42.113.52/alerts]. It is possible you may need to log into the VM if you are the first one to use it. Just fill out the **Prism Central IP**, **Username** and **Password** and click **Login**.
 
    .. figure:: images/init2.png
 
 #. Once you have landed on the alerts page, leave the tab open. It will be used in a later portion of this lab.
 
-   .. figure:: images/init2b.png
+   .. figure:: images/init2c.png
 
-#. In a separate tab, navigate to http://`<GTSPrismOpsLabUtilityServer_IP_ADDRESS>`/ to complete the lab from [example http://10.42.113.52/]. Use the UI at this URL to complete the lab.
+#. In a separate tab, navigate to http://`<PrismOpsLabUtilityServer_IP_ADDRESS>`/ to complete the lab from [example http://10.42.113.52/]. Use the UI at this URL to complete the lab.
 
    .. figure:: images/init3.png
 
@@ -60,7 +60,7 @@ Prism Ops's X-FIT engine also provides the capability to plan for future workloa
 
 #. Under the **‘Adjust Resources’** section in the left side of this page, click the **‘Get Started’** button. We can now use this to start planning for new workloads and see how runway will need to be extended in the future.
 
-#. Click the **add/adjust** button in the left side underneath the ‘Workloads’ item.
+#. Click the **Add/Adjust** button in the left side underneath the ‘Workloads’ item.
 
    .. figure:: images/ppro_15.png
 
@@ -88,6 +88,10 @@ Prism Ops's X-FIT engine also provides the capability to plan for future workloa
 
    .. figure:: images/ppro_20.png
 
+#. Close the screen by clicking the **X** symbol in the top right corner
+
+#. Click **No** on the *Do you want to save the scenario?* question
+
 Automate Capacity Forecast Report Generation with X-Play
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -101,17 +105,22 @@ Now let's look at how we can take automated action to generate this report when 
 
    .. figure:: images/cap2.png
 
+   .. note::
+      If you see the *Welcome to Playbooks* screen, click **Get Started**
+
 #. Select the **Alert** as the trigger.
 
-   .. figure:: images/cap3.png
+   .. figure:: images/cap3b.png
 
 #. Search and select **Cluster running out of Memory Capacity (low runway)** as the alert policy, since this is the issue we are looking to take automated steps to generate a report for.
 
    .. figure:: images/cap4.png
 
+#. Leave all other options as default
+
 #. First, we would like to Generate a Forecast report for this alert. Click **Add Action** on the left side and select the **Generate Forecast Report** action.
 
-   .. figure:: images/cap5.png
+   .. figure:: images/cap5b.png
 
 #. The Alert Source Entity in this case will be the Cluster that the alert is generated on. You can also change the Runway Period if you would like.
 
@@ -123,9 +132,10 @@ Now let's look at how we can take automated action to generate this report when 
 
 #. Fill in the field in the email action. Here are the examples
 
-   - **Recipient:** - Fill in your email address.
-   - **Subject :** - ``Playbook {{playbook.playbook_name}} was executed.``
-   - **Message:** - `As a result of the alert, {{trigger[0].alert_entity_info.name}}, the playbook, {{playbook.playbook_name}}, was executed. The generated report is attached to this email.``
+   - **Recipient** - Fill in your email address.
+   - **Subject** - ``Playbook {{playbook.playbook_name}} was executed.``
+   - **Message** - ``As a result of the alert, {{trigger[0].alert_entity_info.name}}, the playbook, {{playbook.playbook_name}}, was executed. The generated report is attached to this email.``
+   - **Attachment** - Click the **Parameters** and select **Report PDF**
 
    .. note::
 
@@ -133,9 +143,11 @@ Now let's look at how we can take automated action to generate this report when 
 
    .. figure:: images/cap8.png
 
-#. Click **Save & Close** button and save it with a name “*Initials* - Automatically Generate Forecast Report”. **Be sure to enable the ‘Enabled’ toggle.**
+#. Click **Save & Close** button and save it with a name “*Initials* - Automatically Generate Forecast Report”. **Be sure to enable the ‘Enabled’ toggle on the Playbook Status.**
 
-   .. figure:: images/cap9.png
+   .. figure:: images/cap9b.png
+
+#. Click **Save**
 
 #. The alert simulation portion of this lab is not working today, instead we will show you what it would look like if the alert were to successfully generate. From the table view click to open the details for the “*Initials* - Automatically Generate Forecast Report” Playbook.
 

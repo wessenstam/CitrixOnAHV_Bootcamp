@@ -48,12 +48,14 @@ A single XenDesktop site can contain multiple Delivery Controllers and StoreFron
 
    .. figure:: images/3.png
 
-#. Fill out the following fields and click **Next > Finish**:
+#. Fill out the following fields
 
    - **Name for these resources** - *Initials*\ -Resources
    - Select **Secondary Network**
 
-   .. figure:: images/4b.png
+   .. figure:: images/4.png
+
+#. Click **Next > Finish**
 
 Creating the Machine Catalog
 ++++++++++++++++++++++++++++
@@ -144,7 +146,7 @@ Delivery Groups are collections of machines from one or more Machine Catalogs. T
 
 #. Click **Next**.
 
-#. Select your **Persistent** Machine Catalog and specify the maximum number of VMs available for the Delivery Group.
+#. Select your **Persistent** Machine Catalog and specify the maximum number of VMs available for the Delivery Group and click **Next**.
 
    .. figure:: images/18.png
 

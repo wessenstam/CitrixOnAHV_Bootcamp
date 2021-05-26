@@ -31,9 +31,9 @@ Categorizing the SecOps VM
 
    .. figure:: images/14.png
 
-#. Specify **AppType:**\ *Initials*-**SecOps** in the search bar and click **Save** icon to assign the category to the tools VM.
+#. Specify **AppType:**\ *Initials*-**SecOps** in the search bar and click the :fa:`plus-circle` icon and click **Save** icon to assign the category to the tools VM.
 
-   .. figure:: images/15.png
+   .. figure:: images/15b.png
 
 Accessing and Quarantining the Desktops
 +++++++++++++++++++++++++++++++++++++++
@@ -47,7 +47,7 @@ Accessing and Quarantining the Desktops
 
 #. Select the **Desktops** tab and click your **Personal Win10 Desktop** to launch the session.
 
-#. In addition, Open a **Command Prompt** on your *Initials*\ **WinToolsVM** and run ``ping -t XYZ-PD-1-VM-IP`` to verify connectivity between the windows tools client and the persistent desktop.
+#. In addition, Open a **Command Prompt** on your *Initials*\ **WinToolsVM** and run ``ping -t <Initials>-PD-1-VM-IP`` to verify connectivity between the windows tools client and the persistent desktop.
 
 #. In **Prism Central > Virtual Infrastructure > VMs**, select your *Initials*\ **-PD-1** and *Initials*\ **-PD-2** VMs .
 
@@ -62,7 +62,7 @@ Accessing and Quarantining the Desktops
 Creating a Custom Quarantine Policy
 +++++++++++++++++++++++++++++++++++
 
-#. In **Prism Central**, select :fa:`bars` **> Policies > Security Policies > Quarantine** to view all Quarantined VMs.
+#. In **Prism Central**, select :fa:`bars` **> Policies > Security > Quarantine** to view all Quarantined VMs.
 
 #. Click **Update** to edit the Quarantine policy.
 
@@ -87,11 +87,11 @@ Creating a Custom Quarantine Policy
 
 #. Click the :fa:`plus-circle` icon to the left of **Quarantine: Forensic** to create an Inbound Rule.
 
+   .. figure:: images/17b.png
+
 #. Click **Save** to allow any protocol on any port between the SecOps VM and the **Quarantine: Forensic** category.
 
-   .. figure:: images/17.png
-
-#. Click **Next** and click **Apply Now** to save and apply the updated policy.
+#. Click **Next** and click **Save and Enforce** to save and apply the updated policy.
 
    What happens to the pings to the desktop after the source is added?
 

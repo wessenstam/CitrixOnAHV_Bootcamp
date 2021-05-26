@@ -17,7 +17,7 @@ Deploying a VM
 
 #. In **Prism Central**, select :fa:`bars` **> Virtual Infrastructure > VMs**.
 
-   .. figure:: images/1.png
+   .. figure:: images/pc2021.3.x/1.png
 
 #. Click **Create VM**.
 
@@ -57,7 +57,7 @@ Before starting to build your **Windows 10** image it is important the ensure th
    - **User Name** - Nutanix
    - **Password** - nutanix/4u
 
-#. Open **System Settings > Windows Update** and click **Pause Updates for 7 Days**.
+#. Open **Right Click the "Start" button -> Settings** and type in the Search bar **Windows Update Settings** and click **Pause Updates for 7 Days**.
 
    .. figure:: images/24.png
 
@@ -70,16 +70,22 @@ The Virtual Delivery Agent (VDA) is a collection of drivers and services install
 
 #. Once the VM has restarted, reconnect to the VM console or connect via RDP.
 
+#. Open **Windows Explorer** and right click the **This PC** and select **Properties**
+
+   .. figure:: images/pc2021.3.x/2.png
+
+#. Click on **Change settings**
+
+   .. figure:: images/pc2021.3.x/3.png
+
 #. Change the **Computer Name** (e.g. *Initials*\ -GoldImage) and join the **NTNXLAB.local** domain using the following credentials:
 
-   - **User Name** - NTNXLAB\\Administrator
+   - **User Name** - Administrator
    - **Password** - nutanix/4u
 
    .. figure:: images/1b.png
 
-   .. note::
-
-      Open **Control Panel > System and Security > System > Change Settings** to access the traditional Windows domain join field in Windows 10.
+#. Click the **Ok** button after your VM has been added to the domain
 
 #. Restart your VM and log in using the following credentials:
 
@@ -125,7 +131,7 @@ The Virtual Delivery Agent (VDA) is a collection of drivers and services install
 
    .. figure:: images/8.png
 
-# Under **Features**, click **Next**.
+#. Under **Features**, click **Next**.
 
    .. figure:: images/9.png
 
@@ -142,11 +148,14 @@ The Virtual Delivery Agent (VDA) is a collection of drivers and services install
 Running Citrix Optimizer
 ++++++++++++++++++++++++
 
-#. Within the VM console, download http://10.42.194.11/workshop_staging/CitrixOptimizer.zip and extract to a directory.
+#. Within the Golden Image VM, download http://10.42.194.11/workshop_staging/CitrixOptimizer.zip and extract to a directory.
 
 #. Right-click **CitrixOptimizer.exe** and select **Run as Administrator**.
 
    .. figure:: images/12.png
+
+   .. note::
+      On the **New version available** screen, click the Skip button
 
 #. Select the recommended optimization template based on the Windows build being used for the gold image.
 
@@ -167,11 +176,11 @@ Running Citrix Optimizer
 Running VMware OS Optimization Tool
 +++++++++++++++++++++++++++++++++++
 
-#. Within the VM console, download http://10.42.194.11/workshop_staging/VMwareOSOptimizationTool.zip and extract to a directory.
+#. Within the Golden Image VM, download http://10.42.194.11/workshop_staging/VMwareOSOptimizationTool.zip and extract to a directory.
 
 #. Right-click **VMwareOSOptimizationTool.exe** and select **Run as Administrator**.
 
-#. Click the **Select All** checkbox. Scroll down to **Cleanup Jobs** and un-select the 4 available optimizations. Click **Analyze**.
+#. Click the **Select All** checkbox. Scroll down to **Cleanup Jobs** and un-select the 4 available optimizations. Click **Analyze** at the bottom of the screen.
 
    .. figure:: images/16.png
 

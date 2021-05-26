@@ -54,7 +54,7 @@ Categorizing the Desktop VMs
 Creating a Desktop Security Policy
 ++++++++++++++++++++++++++++++++++
 
-#. In **Prism Central**, select :fa:`bars` **> Policies > Security Policies**.
+#. In **Prism Central**, select :fa:`bars` **> Policies > Security**.
 
 #. Click **Create Security Policy > Secure Applications (App Policy) > Create**.
 
@@ -64,8 +64,9 @@ Creating a Desktop Security Policy
    - **Purpose** - Restrict unnecessary traffic between desktops
    - **Secure this app** - AppType: *Initials*-Desktops
    - Do **NOT** select **Filter the app type by category**.
+   - Leave the **Advanced Configuration** to default
 
-   .. figure:: images/6.png
+   .. figure:: images/6b.png
 
 #. Click **Next**.
 
@@ -75,42 +76,44 @@ Creating a Desktop Security Policy
 
    .. figure:: images/7.png
 
-#. Click **+ Add Tier**.
+#. Click **Select a Tier to add**.
 
 #. Select **AppTier:**\ *Initials*-**PD** from the drop down.
 
 #. Repeat Steps 7-8 for **AppTier:**\ *Initials*-**NPD**.
 
-   .. figure:: images/8.png
+   .. figure:: images/8b.png
 
    Next you will define the **Inbound** rules, which control which sources you will allow to communicate with your application. In this case we want to allow all inbound traffic.
 
-#. On the left side of the policy edit page, change **Inbound** from **Whitelist Only** to **Allow All**
+#. On the left side of the policy edit page, change **Inbounds** from **Allowed List Only** to **Allow All**
 
-   .. figure:: images/9.png
+   .. figure:: images/9b.png
 
 #. Repeat the previous step to also change **Outbound** to **Allow All**.
 
 #. To define intra-desktop communication, click **Set Rules within App**.
 
-   .. figure:: images/10.png
+   .. figure:: images/10b.png
 
-#. Click **AppTier:**\ *Initials*-**PD** and select **No** to prevent communication between VMs in this tier. This will block persistent desktops from communicating with each other.
+#. Hoover over the **AppTier:**\ *Initials*-**PD** and select **Edit > No** to prevent communication between VMs in this tier. This will block persistent desktops from communicating with each other.
 
-   .. figure:: images/11.png
+   .. figure:: images/11b.png
 
-#. While **AppTier:**\ *Initials*-**PD** is still selected, click the :fa:`plus-circle` icon to the right of **AppTier:**\ *Initials*-**NPD** to create a tier to tier rule.
+#. Select the **AppTier:**\ *Initials*-**PD** and click the :fa:`plus-circle` icon to the right of **AppTier:**\ *Initials*-**NPD** to create a tier to tier rule.
+
+#. Click under *Service Details* **Select a Service**
 
 #. Fill out the following fields to allow communication on TCP port **7680** between the persistent and non-persistent tiers to allow peer-to-peer Windows updates:
 
    - **Protocol** - TCP
    - **Ports** - 7680
 
-   .. figure:: images/12.png
+   .. figure:: images/12b.png
 
 #. Click **Save**.
 
-#. Select **AppTier:**\ *Initials*-**NPD** and select **No** to block VM to VM communication for the non-persistent desktops.
+#. Hoover over the **AppTier:**\ *Initials*-**NPD** and select **Edit > No** to block VM to VM communication for the non-persistent desktops.
 
 #. Click **Next** to review the security policy.
 
@@ -136,13 +139,13 @@ Verifying Desktop Security
 
    Can you ping between the desktops now? Why?
 
-#. In **Prism Central > Policies > Security Policies**, select the *Initials*\ **-Desktops** policy.
+#. In **Prism Central > Policies > Security**, select the *Initials*\ **-Desktops** policy.
 
-#. Click **Actions > Apply**.
+#. Click **Actions > Enforce**.
 
-   .. figure:: images/14.png
+   .. figure:: images/14b.png
 
-#. Type **APPLY** and click **OK** to apply the Desktop security policy.
+#. Type **ENFORCE** and click **CONFIRM** to apply the Desktop security policy.
 
    What happens to the continuous ping between the desktops?
 

@@ -119,6 +119,8 @@ Creating the Delivery Group
 
       For more granular control of registered, powered on VMs you can click the Edit link and provide the number or percentage of VMs you want available for every hour of the day. You can also configure the disconnected VM policy to free up disconnected VMs after a configurable time out period, returning the desktop to the pool for another user.
 
+#. Click **Ok** to proceed
+
 #. After increasing the number of powered on virtual machines, validate the **W10NP-##** VMs are powered on in **Prism** and appear as Registered in **Citrix Studio**.
 
    .. figure:: images/8.png

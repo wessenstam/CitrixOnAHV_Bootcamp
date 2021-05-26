@@ -34,11 +34,12 @@ For the purposes of saving time and resources, a Nutanix Files instance has alre
 
 #. Fill out the following fields and click **Next > Create**:
 
-   - Select **Enable Access Based Enumeration (ABE)**
    - Select **Self Service Restore**
+   - Select **Enable File System Compression**
+   - Select **Enable Access Based Enumeration (ABE)**
    - Select **Blocked File Types** - .mp3,.mp4
 
-   .. figure:: images/13.png
+   .. figure:: images/13b.png
 
    .. note::
 
@@ -96,9 +97,11 @@ Managing access control for Files SMB shares is still performed natively through
 
    .. figure:: images/5.png
 
-#. Click **OK > OK > OK**.
+#. Click **OK**.
 
    .. figure:: images/6.png
+
+#. Click **OK > OK**.
 
 Configuring Citrix User Profile Management
 ++++++++++++++++++++++++++++++++++++++++++
@@ -113,7 +116,7 @@ In this exercise you will enable UPM through the Citrix Policy engine, similar t
 
 #. Select **Profile Management > Basic Settings** from the **All Settings** drop down menu. Optionally you can filter for only policies supported on **1912 Single-Session OS** from the **All Versions** drop down menu.
 
-   .. figure:: images/8.png
+   .. figure:: images/8b.png
 
 #. Search for **Enable Profile management** and click **Select**. Select **Enabled** and click **OK**.
 
