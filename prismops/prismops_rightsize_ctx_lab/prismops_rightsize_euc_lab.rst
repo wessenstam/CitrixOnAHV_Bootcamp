@@ -15,7 +15,7 @@ Lab Setup
 
 Please be sure to complete the `Building & Optimizing the Gold Image` lab as you will need to use the VM created there to complete this lab.
 
-#. Open your **Prism Central** and navigate to the **VMs** page. Note down the IP Address of the **GTSPrismOpsLabUtilityServer**. You will need to access this IP Address throughout this lab.
+#. Open your **Prism Central** and navigate to the **VMs** page. Note down the IP Address of the **PrismOpsLabUtilityServer**. You will need to access this IP Address throughout this lab.
 
    .. figure:: images/init1.png
 
